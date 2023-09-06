@@ -8,6 +8,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Services</a></li>
+                <li><a href='#'>Portfolio</a></li>
+                <li><a href='#'>Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Penny</span><br>Silliman</h1>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------about---------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>3rd year Computer Science major and Computer Engineering
+                    minor at University of Portland. Actively looking for
+                    CS internship in Portland for summer 2024</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('academics')">Academics</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Development</span><br>Creation and Design of Software Applications</li>
+                        <li><span>Game Development</span><br>Technical Game Development & Programming</li>
+                        <li><span>Team Leadership</span><br>Facilitating and Supporting Team Projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fall 2023 - Current</span><br>Help Desk Tech Assistant</li>
+                        <li><span>May - Sept 2023</span><br>UPS Package Handler</li>
+                        <li><span>Aug 2022 - April 2023</span><br>Community Assistant</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="academics">
+                    <ul>
+                        <li><span>Software Engineering</span><br>Development of Public Transite Website</li>
+                        <li><span>Programming Languages</span><br>Exploration of Programming Language Differences</li>
+                        <li><span>Embedded Systems</span><br>Microcontroller Programming and Interfacing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
