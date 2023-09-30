@@ -10,7 +10,7 @@
   - [Acknowledgements](#acknowledgements)
 
 ## Overview
-![Alt text](images/screenshot.png)
+![Alt text](resources/screenshot.png)
 See <!-- create a demo video and insert link here --> for a live demo.
 
 When I first embarked on this project, I expected it to be a quick and straightforward endeavor, merely a means to showcase my work in a user-friendly manner. My approach was to follow a tutorial I found on YouTube (for more details, please refer to the Features section in the README). Initially, I leaned heavily on this tutorial due to my limited interest in front-end web design, as my expertise primarily lies in back-end and software development. However, to my surprise, this project turned out to be a significant learning experience.
